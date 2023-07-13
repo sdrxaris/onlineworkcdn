@@ -1,0 +1,211 @@
+
+.wrapperboo {
+    width: 300px;
+    height: 500px;
+    background: white;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+}  
+h2 {
+    font-size: small;
+}
+.wrapperboo:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.wrapperboo .containerboo {
+    width: 100%;
+    height: 100%;
+}
+.wrapperboo .containerboo .top {
+    height: 80%;
+    width: 100%;
+    background: url('#') no-repeat center center;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+.wrapperboo .containerboo .bottom {
+    width: 200%;
+    height: 20%;
+    transition: transform 0.5s;
+}
+.wrapperboo .containerboo .bottom.clicked {
+    transform: translateX(-50%);
+}
+.wrapperboo .containerboo .bottom h1 {
+    margin: 0;
+    padding: 0;
+}
+.wrapperboo .containerboo .bottom p {
+    margin: 0;
+    padding: 0;
+}
+.wrapperboo .containerboo .bottom .left {
+    height: 100%;
+    width: 50%;
+    background: #f4f4f4;
+    position: relative;
+    float: left;
+}
+.menuSettingsBtn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-light {
+    color: #212529;
+    background-color: #faf8f8;
+    border-color: #f8f9fa;
+}
+.wrapperboo .containerboo .bottom .left .details {
+    padding: 10px;
+    float: left;
+    width: calc(70% - 40px);
+}
+.wrapperboo .containerboo .bottom .left .buy {
+    float: right;
+    width: calc(30% - 2px);
+    height: 100%;
+    background: #f1f1f1;
+    transition: background 0.5s;
+    border-left: solid thin rgba(0, 0, 0, 0.1);
+}
+.wrapperboo .containerboo .bottom .left .buy i {
+    font-size: 30px;
+    padding: 30px;
+    color: #254053;
+    transition: transform 0.5s;
+}
+.wrapperboo .containerboo .bottom .left .buy:hover {
+    background: #a6cdde;
+}
+.wrapperboo .containerboo .bottom .left .buy:hover i {
+    transform: translateY(5px);
+    color: #00394b;
+}
+.wrapperboo .containerboo .bottom .right {
+    width: 50%;
+    background: #a6cdde;
+    color: white;
+    float: right;
+    height: 200%;
+    overflow: hidden;
+}
+.wrapperboo .containerboo .bottom .right .details {
+    padding: 10px;
+    float: left;
+    width: calc(70% - 40px);
+}
+.wrapperboo .containerboo .bottom .right .done {
+    width: calc(30% - 2px);
+    float: left;
+    transition: transform 0.5s;
+    border-right: solid thin rgba(255, 255, 255, 0.3);
+    height: 50%;
+}
+.wrapperboo .containerboo .bottom .right .done i {
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+}
+.wrapperboo .containerboo .bottom .right .remove {
+    width: calc(30% - 1px);
+    clear: both;
+    border-right: solid thin rgba(255, 255, 255, 0.3);
+    height: 50%;
+    background: #bc3b59;
+    transition: transform 0.5s, background 0.5s;
+}
+.wrapperboo .containerboo .bottom .right .remove:hover {
+    background: #9b2847;
+}
+.wrapperboo .containerboo .bottom .right .remove:hover i {
+    transform: translateY(5px);
+}
+.wrapperboo .containerboo .bottom .right .remove i {
+    transition: transform 0.5s;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+}
+.wrapperboo .containerboo .bottom .right:hover .remove, .wrapperboo .containerboo .bottom .right:hover .done {
+    transform: translateY(-100%);
+}
+.wrapperboo .inside {
+    z-index: 9;
+    background: #92879b;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+}
+.wrapperboo .inside .iconboo {
+    position: absolute;
+    right: 95px;
+    top: 85px;
+    color: white;
+    opacity: 1;
+}
+.wrapperboo .inside:hover {
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 80%;
+}
+.wrapperboo .inside:hover .iconboo {
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+}
+.wrapperboo .inside:hover .contents {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+}
+.wrapperboo .inside .contents {
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s, transform 0.8s;
+}
+.wrapperboo .inside .contents table {
+    text-align: left;
+    width: 100%;
+}
+.wrapperboo .inside .contents h1, .wrapperboo .inside .contents p, .wrapperboo .inside .contents table {
+    color: white;
+}
+.wrapperboo .inside .contents p {
+    font-size: 13px;
+}
