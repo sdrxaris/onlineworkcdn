@@ -5,7 +5,7 @@ jQuery.extend( jQuery.fn.pickadate.defaults, {
     monthsShort: [ 'Ιαν', 'Φεβ', 'Μαρ', 'Απρ', 'Μαι', 'Ιουν', 'Ιουλ', 'Αυγ', 'Σεπ', 'Οκτ', 'Νοε', 'Δεκ' ],
     weekdaysFull: [ 'Κυριακή', 'Δευτέρα', 'Τρίτη', 'Τετάρτη', 'Πέμπτη', 'Παρασκευή', 'Σάββατο' ],
     weekdaysShort: [ 'Κυρ', 'Δευ', 'Τρι', 'Τετ', 'Πεμ', 'Παρ', 'Σαβ' ],
-    today: 'σήμερα',
+    today: 'Σήμερα',
     clear: 'Διαγραφή',
     firstDay: 1,
     format: 'd mmmm yyyy',
