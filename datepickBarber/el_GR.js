@@ -11,7 +11,4 @@ jQuery.extend( jQuery.fn.pickadate.defaults, {
     format: 'd mmmm yyyy',
     formatSubmit: 'yyyy/mm/dd'
 });
-
-jQuery.extend( jQuery.fn.pickatime.defaults, {
-    clear: 'Διαγραφή'
-});
+ 
